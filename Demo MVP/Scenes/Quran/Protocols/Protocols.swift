@@ -7,10 +7,13 @@
 
 import Foundation
 
-protocol QuranProtocol {
-    
+protocol QuranProtocol :class {
     func showProgress()
     func dismissProgress()
     func getDataSucessfully()
-    
+    func showErrorMessage(error:String)
+}
+
+protocol  setCellDataProtocol :class {
+    func setUpDateCell(quranData:QuranData)
 }

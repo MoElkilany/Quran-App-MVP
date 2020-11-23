@@ -13,7 +13,6 @@ struct QuranResponse : Codable {
     var data: [QuranData]?
 }
 
-// MARK: - Datum
 struct QuranData :Codable  {
     var number: Int?
     var name, englishName, englishNameTranslation: String?

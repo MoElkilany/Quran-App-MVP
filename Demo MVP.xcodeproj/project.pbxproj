@@ -11,10 +11,10 @@
 		DB386F20256BF6E900ABEAB5 /* QuranResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */; };
 		DB386F24256BF73B00ABEAB5 /* QuranCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F23256BF73B00ABEAB5 /* QuranCell.swift */; };
 		DB386F28256BF7CA00ABEAB5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F27256BF7CA00ABEAB5 /* Protocols.swift */; };
+		DB386F2B256BFB4300ABEAB5 /* QuranPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F2A256BFB4300ABEAB5 /* QuranPresenter.swift */; };
+		DB386F2F256BFBF500ABEAB5 /* QuranNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F2E256BFBF500ABEAB5 /* QuranNetwork.swift */; };
 		DBA82D49256BF5530006EDE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D48256BF5530006EDE0 /* AppDelegate.swift */; };
-		DBA82D4B256BF5530006EDE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */; };
 		DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4C256BF5530006EDE0 /* QuranVC.swift */; };
-		DBA82D50256BF5530006EDE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D4E256BF5530006EDE0 /* Main.storyboard */; };
 		DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D51256BF5540006EDE0 /* Assets.xcassets */; };
 		DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,11 +24,11 @@
 		DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranResponse.swift; sourceTree = "<group>"; };
 		DB386F23256BF73B00ABEAB5 /* QuranCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranCell.swift; sourceTree = "<group>"; };
 		DB386F27256BF7CA00ABEAB5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		DB386F2A256BFB4300ABEAB5 /* QuranPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranPresenter.swift; sourceTree = "<group>"; };
+		DB386F2E256BFBF500ABEAB5 /* QuranNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranNetwork.swift; sourceTree = "<group>"; };
 		DBA82D45256BF5530006EDE0 /* Demo MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA82D48256BF5530006EDE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DBA82D4C256BF5530006EDE0 /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
-		DBA82D4F256BF5530006EDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA82D51256BF5540006EDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA82D54256BF5540006EDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA82D56256BF5540006EDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 		DB386F15256BF61700ABEAB5 /* Quran */ = {
 			isa = PBXGroup;
 			children = (
+				DB386F2D256BFBE100ABEAB5 /* Network */,
 				DB386F26256BF78500ABEAB5 /* Protocols */,
 				DB386F18256BF62F00ABEAB5 /* Presenter */,
 				DB386F17256BF62A00ABEAB5 /* View */,
@@ -85,17 +86,17 @@
 		DB386F18256BF62F00ABEAB5 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DB386F2A256BFB4300ABEAB5 /* QuranPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		DB386F19256BF64200ABEAB5 /* storyBoard */ = {
+		DB386F19256BF64200ABEAB5 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				DBA82D4E256BF5530006EDE0 /* Main.storyboard */,
 				DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */,
 			);
-			path = storyBoard;
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		DB386F22256BF6FB00ABEAB5 /* TableCell */ = {
@@ -112,6 +113,14 @@
 				DB386F27256BF7CA00ABEAB5 /* Protocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DB386F2D256BFBE100ABEAB5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F2E256BFBF500ABEAB5 /* QuranNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DBA82D3C256BF5530006EDE0 = {
@@ -135,7 +144,7 @@
 			children = (
 				DBA82D5E256BF5660006EDE0 /* Resources */,
 				DBA82D5D256BF55A0006EDE0 /* Core */,
-				DB386F19256BF64200ABEAB5 /* storyBoard */,
+				DB386F19256BF64200ABEAB5 /* StoryBoard */,
 				DB386F14256BF60C00ABEAB5 /* Scenes */,
 			);
 			path = "Demo MVP";
@@ -145,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				DBA82D48256BF5530006EDE0 /* AppDelegate.swift */,
-				DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -218,7 +226,6 @@
 			files = (
 				DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */,
 				DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */,
-				DBA82D50256BF5530006EDE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,21 +242,14 @@
 				DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */,
 				DB386F24256BF73B00ABEAB5 /* QuranCell.swift in Sources */,
 				DBA82D49256BF5530006EDE0 /* AppDelegate.swift in Sources */,
-				DBA82D4B256BF5530006EDE0 /* SceneDelegate.swift in Sources */,
+				DB386F2F256BFBF500ABEAB5 /* QuranNetwork.swift in Sources */,
+				DB386F2B256BFB4300ABEAB5 /* QuranPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBA82D4E256BF5530006EDE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBA82D4F256BF5530006EDE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -385,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo MVP/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo MVP/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
