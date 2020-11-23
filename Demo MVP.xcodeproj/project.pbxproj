@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB386F1C256BF6A600ABEAB5 /* QuranVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F1B256BF6A600ABEAB5 /* QuranVC+TableView.swift */; };
+		DB386F20256BF6E900ABEAB5 /* QuranResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */; };
+		DB386F24256BF73B00ABEAB5 /* QuranCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F23256BF73B00ABEAB5 /* QuranCell.swift */; };
+		DB386F28256BF7CA00ABEAB5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F27256BF7CA00ABEAB5 /* Protocols.swift */; };
 		DBA82D49256BF5530006EDE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D48256BF5530006EDE0 /* AppDelegate.swift */; };
 		DBA82D4B256BF5530006EDE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */; };
-		DBA82D4D256BF5530006EDE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4C256BF5530006EDE0 /* ViewController.swift */; };
+		DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4C256BF5530006EDE0 /* QuranVC.swift */; };
 		DBA82D50256BF5530006EDE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D4E256BF5530006EDE0 /* Main.storyboard */; };
 		DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D51256BF5540006EDE0 /* Assets.xcassets */; };
 		DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB386F1B256BF6A600ABEAB5 /* QuranVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuranVC+TableView.swift"; sourceTree = "<group>"; };
+		DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranResponse.swift; sourceTree = "<group>"; };
+		DB386F23256BF73B00ABEAB5 /* QuranCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranCell.swift; sourceTree = "<group>"; };
+		DB386F27256BF7CA00ABEAB5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		DBA82D45256BF5530006EDE0 /* Demo MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA82D48256BF5530006EDE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBA82D4C256BF5530006EDE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBA82D4C256BF5530006EDE0 /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
 		DBA82D4F256BF5530006EDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA82D51256BF5540006EDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA82D54256BF5540006EDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +45,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB386F14256BF60C00ABEAB5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F15256BF61700ABEAB5 /* Quran */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DB386F15256BF61700ABEAB5 /* Quran */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F26256BF78500ABEAB5 /* Protocols */,
+				DB386F18256BF62F00ABEAB5 /* Presenter */,
+				DB386F17256BF62A00ABEAB5 /* View */,
+				DB386F16256BF62100ABEAB5 /* Model */,
+			);
+			path = Quran;
+			sourceTree = "<group>";
+		};
+		DB386F16256BF62100ABEAB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB386F17256BF62A00ABEAB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F22256BF6FB00ABEAB5 /* TableCell */,
+				DBA82D4C256BF5530006EDE0 /* QuranVC.swift */,
+				DB386F1B256BF6A600ABEAB5 /* QuranVC+TableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB386F18256BF62F00ABEAB5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DB386F19256BF64200ABEAB5 /* storyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DBA82D4E256BF5530006EDE0 /* Main.storyboard */,
+				DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */,
+			);
+			path = storyBoard;
+			sourceTree = "<group>";
+		};
+		DB386F22256BF6FB00ABEAB5 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F23256BF73B00ABEAB5 /* QuranCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		DB386F26256BF78500ABEAB5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DB386F27256BF7CA00ABEAB5 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		DBA82D3C256BF5530006EDE0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +133,30 @@
 		DBA82D47256BF5530006EDE0 /* Demo MVP */ = {
 			isa = PBXGroup;
 			children = (
-				DBA82D48256BF5530006EDE0 /* AppDelegate.swift */,
-				DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */,
-				DBA82D4C256BF5530006EDE0 /* ViewController.swift */,
-				DBA82D4E256BF5530006EDE0 /* Main.storyboard */,
-				DBA82D51256BF5540006EDE0 /* Assets.xcassets */,
-				DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */,
-				DBA82D56256BF5540006EDE0 /* Info.plist */,
+				DBA82D5E256BF5660006EDE0 /* Resources */,
+				DBA82D5D256BF55A0006EDE0 /* Core */,
+				DB386F19256BF64200ABEAB5 /* storyBoard */,
+				DB386F14256BF60C00ABEAB5 /* Scenes */,
 			);
 			path = "Demo MVP";
+			sourceTree = "<group>";
+		};
+		DBA82D5D256BF55A0006EDE0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DBA82D48256BF5530006EDE0 /* AppDelegate.swift */,
+				DBA82D4A256BF5530006EDE0 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DBA82D5E256BF5660006EDE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBA82D51256BF5540006EDE0 /* Assets.xcassets */,
+				DBA82D56256BF5540006EDE0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA82D4D256BF5530006EDE0 /* ViewController.swift in Sources */,
+				DB386F20256BF6E900ABEAB5 /* QuranResponse.swift in Sources */,
+				DB386F1C256BF6A600ABEAB5 /* QuranVC+TableView.swift in Sources */,
+				DB386F28256BF7CA00ABEAB5 /* Protocols.swift in Sources */,
+				DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */,
+				DB386F24256BF73B00ABEAB5 /* QuranCell.swift in Sources */,
 				DBA82D49256BF5530006EDE0 /* AppDelegate.swift in Sources */,
 				DBA82D4B256BF5530006EDE0 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
-				INFOPLIST_FILE = "Demo MVP/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo MVP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
-				INFOPLIST_FILE = "Demo MVP/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo MVP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
