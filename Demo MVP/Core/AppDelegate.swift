@@ -14,9 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navigationContoller = UINavigationController(rootViewController: QuranVC())
+        let navigationContoller = UINavigationController(rootViewController: LoginVC())
         
-        navigationContoller.navigationBar.topItem?.title = "Quran"
         navigationContoller.navigationBar.barTintColor = .gray
         window?.backgroundColor = .white
         self.window?.rootViewController = navigationContoller

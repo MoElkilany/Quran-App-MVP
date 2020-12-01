@@ -9,6 +9,8 @@ import Foundation
 
 class QuranNetwork {
     
+    static let shared = QuranNetwork()
+    
     func getWords(completion:@escaping([QuranData]?,Error?)->()){
         guard let url = URL(string: "https://api.alquran.cloud/v1/surah") else{
             return

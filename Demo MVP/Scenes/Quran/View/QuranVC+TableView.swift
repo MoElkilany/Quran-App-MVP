@@ -16,8 +16,7 @@ extension QuranVC:UITableViewDelegate,UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: QuranCell.reuseID) as! QuranCell
         presenter.setCellData(cell: cell, index: indexPath.row)
         return cell
-        
     }
     
-    
+  
 }

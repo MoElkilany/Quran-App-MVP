@@ -7,10 +7,18 @@
 
 import UIKit
 
+protocol SendDataProtocol  {
+    func sendData(quranData:QuranData)
+}
+
+
 class QuranVC: UIViewController {
     
     var presenter :QuranPresenter!
+    
+    var delegate  :SendDataProtocol?
     let tableList = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = QuranPresenter(view: self)
@@ -18,15 +26,19 @@ class QuranVC: UIViewController {
         presenter.startAPI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = presenter.quranNavigationTitle
+    }
+    
     func setTableViewConfigration(){
-        
+
         view.addSubview(tableList)
         tableList.register(QuranCell.self, forCellReuseIdentifier: QuranCell.reuseID)
         tableList.delegate   = self
         tableList.dataSource = self
         tableList.showsVerticalScrollIndicator = false
         tableList.showsHorizontalScrollIndicator = false
-
         tableList.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -40,6 +52,13 @@ class QuranVC: UIViewController {
 
 
 extension QuranVC : QuranProtocol {
+    
+    func navigateTo(quranData: QuranData) {
+        delegate?.sendData(quranData: quranData)
+        self.navigationController?.pushViewController(QuranInfoVC(), animated: true)
+    }
+    
+    
     func showProgress() {
         print("showProgress")
     }

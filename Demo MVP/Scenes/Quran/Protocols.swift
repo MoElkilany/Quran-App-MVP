@@ -8,10 +8,13 @@
 import Foundation
 
 protocol QuranProtocol :class {
+    
     func showProgress()
     func dismissProgress()
     func getDataSucessfully()
     func showErrorMessage(error:String)
+    func navigateTo(quranData:QuranData)
+    
 }
 
 protocol  setCellDataProtocol :class {
