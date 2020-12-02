@@ -13,9 +13,9 @@ class LoginVC: UIViewController {
     var mainView: LoginView {
         return view as! LoginView
     }
+    
     var presenter : LoginPresenter!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         actionButtons()
@@ -24,6 +24,10 @@ class LoginVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        mainView.tosteView.layer.cornerRadius = 20
+        self.mainView.tosteView.isHidden = true
+        mainView.tosteLable.frame.size = mainView.tosteLable.intrinsicContentSize
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -31,7 +35,6 @@ class LoginVC: UIViewController {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
     
     func actionButtons(){
         mainView.loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
@@ -46,8 +49,13 @@ class LoginVC: UIViewController {
 
 extension LoginVC : LoginProtocol {
     func showErrorMessage(message: ErrorMessages) {
-        self.presentAlert(title: .Error, message: message.rawValue, buttonTitle: .ok)
         
+        self.mainView.tosteView.isHidden = false
+        mainView.tosteLable.text = message.rawValue
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.mainView.tosteView.isHidden = true
+        }
     }
     
     func loginSucessfully() {
@@ -56,5 +64,3 @@ extension LoginVC : LoginProtocol {
         self.navigationController?.pushViewController(QuranVC(), animated: true)
     }
 }
-
-

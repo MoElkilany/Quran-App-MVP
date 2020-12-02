@@ -8,8 +8,9 @@
 import Foundation
 
 class LoginPresenter {
-    
-   private var view :LoginProtocol!
+
+
+    private var view :LoginProtocol!
     
     init(view:LoginProtocol) {
         self.view = view

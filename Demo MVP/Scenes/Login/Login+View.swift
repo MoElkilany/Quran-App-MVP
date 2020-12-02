@@ -11,6 +11,7 @@ class LoginView :UIView{
     @IBOutlet weak var emilTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-
+    @IBOutlet weak var tosteLable: UILabel!
+    @IBOutlet weak var tosteView: UIView!
     
 }
