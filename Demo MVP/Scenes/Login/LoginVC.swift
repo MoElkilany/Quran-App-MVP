@@ -18,6 +18,8 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.emilTF.text = "ios@gmail.com"
+        mainView.passwordTF.text = "12345678"
         actionButtons()
         presenter = LoginPresenter(view: self)
     }
@@ -50,17 +52,25 @@ class LoginVC: UIViewController {
 extension LoginVC : LoginProtocol {
     func showErrorMessage(message: ErrorMessages) {
         
-        self.mainView.tosteView.isHidden = false
-        mainView.tosteLable.text = message.rawValue
+        UIView.animate(withDuration: 1) {
+            self.mainView.tosteView.isHidden = false
+            self.mainView.tosteLable.text = message.rawValue
+        }
+        
+        
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.mainView.tosteView.isHidden = true
+            
+            UIView.animate(withDuration: 1) {
+                self.mainView.tosteView.isHidden = true
+            }
         }
     }
     
+    
     func loginSucessfully() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-
+        navigationItem.backBarButtonItem?.tintColor = .white
         self.navigationController?.pushViewController(QuranVC(), animated: true)
     }
 }

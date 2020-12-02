@@ -32,7 +32,7 @@ class QuranVC: UIViewController {
     }
     
     func setTableViewConfigration(){
-
+        
         view.addSubview(tableList)
         tableList.register(QuranCell.self, forCellReuseIdentifier: QuranCell.reuseID)
         tableList.delegate   = self
@@ -57,7 +57,6 @@ extension QuranVC : QuranProtocol {
         delegate?.sendData(quranData: quranData)
         self.navigationController?.pushViewController(QuranInfoVC(), animated: true)
     }
-    
     
     func showProgress() {
         print("showProgress")
