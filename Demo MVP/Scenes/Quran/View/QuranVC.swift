@@ -59,11 +59,14 @@ extension QuranVC : QuranProtocol {
     }
     
     func showProgress() {
-        print("showProgress")
+
+        self.showLoading()
+        
     }
     
     func dismissProgress() {
-        print("DismissProgress")
+        self.hideLoading()
+        
     }
     
     func getDataSucessfully() {

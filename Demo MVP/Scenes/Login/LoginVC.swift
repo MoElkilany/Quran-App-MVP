@@ -9,13 +9,12 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    
     var mainView: LoginView {
         return view as! LoginView
     }
     
     var presenter : LoginPresenter!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.emilTF.text = "ios@gmail.com"
@@ -43,10 +42,11 @@ class LoginVC: UIViewController {
     }
     
     @objc func loginButtonTapped(){
-          presenter.validateUserInputs(userName: mainView.emilTF.text ?? "", password: mainView.passwordTF.text ?? "" )
+        presenter.validateUserInputs(userName: mainView.emilTF.text ?? "", password: mainView.passwordTF.text ?? "" )
+        view.endEditing(true)
+        
     }
 }
-
 
 
 extension LoginVC : LoginProtocol {
@@ -56,11 +56,8 @@ extension LoginVC : LoginProtocol {
             self.mainView.tosteView.isHidden = false
             self.mainView.tosteLable.text = message.rawValue
         }
-        
-        
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            
             UIView.animate(withDuration: 1) {
                 self.mainView.tosteView.isHidden = true
             }

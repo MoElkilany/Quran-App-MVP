@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CC2DF1CC7635D48276AC0AC1 /* Pods_Demo_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA30F7B7B35367BB886FAC3 /* Pods_Demo_MVP.framework */; };
+		DB082AB02577B5D1002F1E74 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB082AAE2577B5D1002F1E74 /* ProgressView.swift */; };
+		DB082AB12577B5D1002F1E74 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB082AAF2577B5D1002F1E74 /* ProgressView.xib */; };
 		DB13531425744E6E009B5A75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB13531325744E6E009B5A75 /* UIViewController+Ex.swift */; };
 		DB386F1C256BF6A600ABEAB5 /* QuranVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F1B256BF6A600ABEAB5 /* QuranVC+TableView.swift */; };
 		DB386F20256BF6E900ABEAB5 /* QuranResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */; };
@@ -34,6 +36,8 @@
 		146D9CF8AA74A2D9953E5BBA /* Pods-Demo MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo MVP.debug.xcconfig"; path = "Target Support Files/Pods-Demo MVP/Pods-Demo MVP.debug.xcconfig"; sourceTree = "<group>"; };
 		3B2F859487BF1E4D91994658 /* Pods-Demo MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo MVP.release.xcconfig"; path = "Target Support Files/Pods-Demo MVP/Pods-Demo MVP.release.xcconfig"; sourceTree = "<group>"; };
 		BCA30F7B7B35367BB886FAC3 /* Pods_Demo_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB082AAE2577B5D1002F1E74 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		DB082AAF2577B5D1002F1E74 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
 		DB13531325744E6E009B5A75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		DB386F1B256BF6A600ABEAB5 /* QuranVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuranVC+TableView.swift"; sourceTree = "<group>"; };
 		DB386F1F256BF6E900ABEAB5 /* QuranResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranResponse.swift; sourceTree = "<group>"; };
@@ -76,8 +80,16 @@
 				146D9CF8AA74A2D9953E5BBA /* Pods-Demo MVP.debug.xcconfig */,
 				3B2F859487BF1E4D91994658 /* Pods-Demo MVP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB082AAD2577B5B9002F1E74 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				DB082AAE2577B5D1002F1E74 /* ProgressView.swift */,
+				DB082AAF2577B5D1002F1E74 /* ProgressView.xib */,
+			);
+			path = Progress;
 			sourceTree = "<group>";
 		};
 		DB13531225744E0B009B5A75 /* Extenstions */ = {
@@ -156,6 +168,7 @@
 		DB4A9ED42576E6BE0052FFDF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DB082AAD2577B5B9002F1E74 /* Progress */,
 				DB4A9ED52576E6DD0052FFDF /* ErrorMessages.swift */,
 				DB4A9ED82576E9600052FFDF /* Validation.swift */,
 			);
@@ -290,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB654A672576E1B50080AB92 /* LoginVC.xib in Resources */,
+				DB082AB12577B5D1002F1E74 /* ProgressView.xib in Resources */,
 				DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */,
 				DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */,
 			);
@@ -361,6 +375,7 @@
 				DB386F2F256BFBF500ABEAB5 /* QuranNetwork.swift in Sources */,
 				DB386F2B256BFB4300ABEAB5 /* QuranPresenter.swift in Sources */,
 				DB4A9ED22576E5DA0052FFDF /* String+EXt.swift in Sources */,
+				DB082AB02577B5D1002F1E74 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
