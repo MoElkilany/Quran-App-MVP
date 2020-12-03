@@ -45,6 +45,6 @@ class QuranPresenter {
     }
     
     func didSelect(index:Int){
-        self.view.didselect(quranData: quran[index], index: index)
+        self.view.didselect(quranData: quran[index])
     }
 }

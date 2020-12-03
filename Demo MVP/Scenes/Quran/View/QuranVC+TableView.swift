@@ -23,14 +23,4 @@ extension QuranVC:UITableViewDelegate,UITableViewDataSource {
         
         
     }
-    
-  
 }
-/*
- func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-   guard let color = presenter.color(for: indexPath.row) else { return }
-   let detailsPresenter = ColorDetailsPresenter(with: color)
-   let detailsController = ColorDetailsViewController(with: detailsPresenter)
-   self.present(detailsController, animated: true, completion: nil)
- }
- */

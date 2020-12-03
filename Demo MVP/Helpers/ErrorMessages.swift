@@ -12,5 +12,5 @@ enum ErrorMessages : String , Error {
     case enterVaildEmail = "Please Enter Vaild Email"
     case enterVaildPassword = "Please Enter Vaild password"
     case emptyPassword = "Please Enter your password"
-    case passwordCount = "Please Enter at least 8 number only"
+    case passwordCount = "Please Enter at least 8 numbers"
 }

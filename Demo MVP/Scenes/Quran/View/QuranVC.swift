@@ -48,11 +48,13 @@ class QuranVC: UIViewController {
 
 
 extension QuranVC : QuranProtocol {
-    func didselect(quranData: QuranData, index: Int) {
+    
+    func didselect(quranData: QuranData) {
         
+        let detailsPresenter = QuranDetailsDataPresenter(with: quranData, with: nil)
         
-        let detailsPresenter = QuranDetailsDataPresenter(with: quranData)
-        let detailsController = QuranInfoVC(with: detailsPresenter)
+        let detailsController = QuranDetailsVC()
+        detailsController.presenter = detailsPresenter
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem?.tintColor = .white

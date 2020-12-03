@@ -14,7 +14,7 @@ protocol QuranProtocol:class{
     func getDataSucessfully()
     func showErrorMessage(error:String)
 //    func navigateTo(quranData:QuranData)
-    func didselect(quranData:QuranData,index:Int)
+    func didselect(quranData:QuranData)
 }
 
 protocol  setCellDataProtocol :class {

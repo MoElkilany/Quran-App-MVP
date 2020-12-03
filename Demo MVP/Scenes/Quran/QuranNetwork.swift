@@ -35,6 +35,4 @@ class QuranNetwork {
         }
         task.resume()
     }
-
-    
 }
