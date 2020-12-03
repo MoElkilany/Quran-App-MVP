@@ -32,6 +32,8 @@
 		DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA82D4C256BF5530006EDE0 /* QuranVC.swift */; };
 		DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D51256BF5540006EDE0 /* Assets.xcassets */; };
 		DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA82D53256BF5540006EDE0 /* LaunchScreen.storyboard */; };
+		DBF2B36B25790AF400906DFC /* QuranDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF2B36A25790AF400906DFC /* QuranDetailsVC.xib */; };
+		DBF2B36E25790EDA00906DFC /* QuranDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF2B36D25790EDA00906DFC /* QuranDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		DBA82D51256BF5540006EDE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA82D54256BF5540006EDE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA82D56256BF5540006EDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF2B36A25790AF400906DFC /* QuranDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuranDetailsVC.xib; sourceTree = "<group>"; };
+		DBF2B36D25790EDA00906DFC /* QuranDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				DB386F3B256C114C00ABEAB5 /* QuranDetailsVC.swift */,
+				DBF2B36A25790AF400906DFC /* QuranDetailsVC.xib */,
+				DBF2B36D25790EDA00906DFC /* QuranDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB654A672576E1B50080AB92 /* LoginVC.xib in Resources */,
+				DBF2B36B25790AF400906DFC /* QuranDetailsVC.xib in Resources */,
 				DB082AB12577B5D1002F1E74 /* ProgressView.xib in Resources */,
 				DBA82D55256BF5540006EDE0 /* LaunchScreen.storyboard in Resources */,
 				DBA82D52256BF5540006EDE0 /* Assets.xcassets in Resources */,
@@ -396,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF2B36E25790EDA00906DFC /* QuranDetailsView.swift in Sources */,
 				DB4A9ED62576E6DD0052FFDF /* ErrorMessages.swift in Sources */,
 				DB654A662576E1B50080AB92 /* LoginVC.swift in Sources */,
 				DB386F20256BF6E900ABEAB5 /* QuranResponse.swift in Sources */,

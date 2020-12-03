@@ -20,16 +20,18 @@ class QuranDetailsDataPresenter {
     
     func viewDidLoad(){
         view?.getDataSucessfully()
-        setEnglishData()
+        view?.arabicName(arabicName: self.quranDetails?.name ?? "")
+        view?.ennglishName(englishName: self.quranDetails?.englishName ?? "")
+        view?.numberOfAyahshName(number: self.quranDetails?.numberOfAyahs ?? 0)
+        view?.typeName(type: self.quranDetails?.revelationType ?? "")
+
     }
     
     func navigationTitle ()->String {
         return quranDetails?.name ?? ""
     }
     
-    func setEnglishData(){
-        view?.printEnglishName(englishName: quranDetails?.englishName ?? "" )
-    }
+   
     
 }
 

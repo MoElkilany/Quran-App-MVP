@@ -9,5 +9,9 @@ import Foundation
 
 protocol QuranDetailsProtocol {
     func getDataSucessfully()
-    func printEnglishName(englishName:String)
+    func ennglishName(englishName:String)
+    func arabicName(arabicName:String)
+    func numberOfAyahshName(number:Int)
+    func typeName(type:String)
+
 }

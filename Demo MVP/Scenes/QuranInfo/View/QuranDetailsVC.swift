@@ -8,6 +8,11 @@
 import UIKit
 class QuranDetailsVC: UIViewController {
     
+    
+    var mainView: QuranDetailsView {
+        return view as!  QuranDetailsView
+    }
+    
     var presenter: QuranDetailsDataPresenter!
     
     override func viewDidLoad() {
@@ -25,9 +30,23 @@ class QuranDetailsVC: UIViewController {
 
 extension QuranDetailsVC :QuranDetailsProtocol {
     
-    func printEnglishName(englishName: String) {
-        print("englishName is :  \(englishName)" )
+    func ennglishName(englishName: String) {
+        mainView.englishNameLabel.text = englishName
     }
+    
+    func arabicName(arabicName: String) {
+        mainView.arabicNameLabel.text = arabicName
+    }
+    
+    func numberOfAyahshName(number: Int) {
+        mainView.numberOfAyahsLabel.text = "\(number)"
+    }
+    
+    func typeName(type: String) {
+        mainView.revelationTypeLabel.text = type
+    }
+    
+    
     
     func getDataSucessfully() {
         print("Get Data Successfully" )
