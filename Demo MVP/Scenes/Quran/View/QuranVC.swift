@@ -7,15 +7,11 @@
 
 import UIKit
 
-protocol SendDataProtocol  {
-    func sendData(quranData:QuranData)
-}
 
 
 class QuranVC: UIViewController {
     
     var presenter :QuranPresenter!
-    var delegate  :SendDataProtocol?
     
     let tableList = UITableView()
     
@@ -53,12 +49,16 @@ class QuranVC: UIViewController {
 
 extension QuranVC : QuranProtocol {
     func didselect(quranData: QuranData, index: Int) {
-//        let vc = QuranInfoVC()
-        delegate?.sendData(quranData: quranData)
-        self.navigationController?.pushViewController(QuranInfoVC(), animated: true)
-    }
-    
+        
+        
+        let detailsPresenter = QuranDetailsDataPresenter(with: quranData)
+        let detailsController = QuranInfoVC(with: detailsPresenter)
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = .white
 
+        self.navigationController?.pushViewController(detailsController, animated: true)
+    }
     
     func showProgress() {
         self.showLoading()
@@ -76,5 +76,5 @@ extension QuranVC : QuranProtocol {
         print("Error Message is \(error) ")
     }
     
-
+    
 }

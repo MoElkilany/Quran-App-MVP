@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         let navigationContoller = UINavigationController(rootViewController: LoginVC())
+        navigationContoller.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationContoller.navigationItem.backBarButtonItem?.tintColor = .white
         navigationContoller.navigationBar.barTintColor = .orange
         navigationContoller.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 

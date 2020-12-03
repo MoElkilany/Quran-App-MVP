@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol QuranProtocol :class {
-    
+protocol QuranProtocol:class{
+
     func showProgress()
     func dismissProgress()
     func getDataSucessfully()

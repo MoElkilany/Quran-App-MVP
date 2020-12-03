@@ -10,12 +10,14 @@ import Foundation
 class QuranPresenter {
 
     private var view:QuranProtocol!
-    private var quran = [QuranData]()
+     var quran = [QuranData]()
     let quranNavigationTitle = "Quran"
     
     init(view:QuranProtocol) {
         self.view = view
     }
+    
+    
     
     func startAPI(){
         self.view.showProgress()

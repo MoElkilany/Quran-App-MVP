@@ -23,6 +23,8 @@
 		DB4A9ED22576E5DA0052FFDF /* String+EXt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A9ED12576E5DA0052FFDF /* String+EXt.swift */; };
 		DB4A9ED62576E6DD0052FFDF /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A9ED52576E6DD0052FFDF /* ErrorMessages.swift */; };
 		DB4A9ED92576E9600052FFDF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A9ED82576E9600052FFDF /* Validation.swift */; };
+		DB57182A2578E80300ADDC75 /* quranDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5718292578E80300ADDC75 /* quranDetails.swift */; };
+		DB5718302578F03B00ADDC75 /* quranDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57182F2578F03B00ADDC75 /* quranDetailsPresenter.swift */; };
 		DB654A662576E1B50080AB92 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB654A642576E1B50080AB92 /* LoginVC.swift */; };
 		DB654A672576E1B50080AB92 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB654A652576E1B50080AB92 /* LoginVC.xib */; };
 		DB654A6A2576E33B0080AB92 /* Login+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB654A692576E33B0080AB92 /* Login+View.swift */; };
@@ -51,6 +53,8 @@
 		DB4A9ED12576E5DA0052FFDF /* String+EXt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EXt.swift"; sourceTree = "<group>"; };
 		DB4A9ED52576E6DD0052FFDF /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		DB4A9ED82576E9600052FFDF /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		DB5718292578E80300ADDC75 /* quranDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quranDetails.swift; sourceTree = "<group>"; };
+		DB57182F2578F03B00ADDC75 /* quranDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quranDetailsPresenter.swift; sourceTree = "<group>"; };
 		DB654A642576E1B50080AB92 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		DB654A652576E1B50080AB92 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		DB654A692576E33B0080AB92 /* Login+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+View.swift"; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				DB386F3B256C114C00ABEAB5 /* QuranInfoVC.swift */,
+				DB5718292578E80300ADDC75 /* quranDetails.swift */,
+				DB57182F2578F03B00ADDC75 /* quranDetailsPresenter.swift */,
 			);
 			path = QuranInfo;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				DB654A6A2576E33B0080AB92 /* Login+View.swift in Sources */,
 				DB4A9ED92576E9600052FFDF /* Validation.swift in Sources */,
 				DBA82D4D256BF5530006EDE0 /* QuranVC.swift in Sources */,
+				DB5718302578F03B00ADDC75 /* quranDetailsPresenter.swift in Sources */,
 				DB4A9ECC2576E4130052FFDF /* LoginPresenter.swift in Sources */,
 				DB386F24256BF73B00ABEAB5 /* QuranCell.swift in Sources */,
 				DBA82D49256BF5530006EDE0 /* AppDelegate.swift in Sources */,
@@ -376,6 +383,7 @@
 				DB386F2B256BFB4300ABEAB5 /* QuranPresenter.swift in Sources */,
 				DB4A9ED22576E5DA0052FFDF /* String+EXt.swift in Sources */,
 				DB082AB02577B5D1002F1E74 /* ProgressView.swift in Sources */,
+				DB57182A2578E80300ADDC75 /* quranDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
