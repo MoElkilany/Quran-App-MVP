@@ -14,9 +14,11 @@ class QuranInfoVC: UIViewController {
     }
 }
 
+
+
 extension QuranInfoVC :SendDataProtocol{
     func sendData(quranData: QuranData) {
-        print("QuranInfoVC Data = \(quranData)")
+        print("QuranInfoVC Data = \(quranData.name)")
     }
     
     

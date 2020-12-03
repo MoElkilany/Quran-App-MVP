@@ -19,6 +19,7 @@ class ProgressView: UIView {
         }
     }
     
+    
     override func draw(_ rect: CGRect) {
         mainView.layer.cornerRadius = 16
     }

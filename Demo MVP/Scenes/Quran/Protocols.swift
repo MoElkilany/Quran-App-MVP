@@ -13,8 +13,8 @@ protocol QuranProtocol :class {
     func dismissProgress()
     func getDataSucessfully()
     func showErrorMessage(error:String)
-    func navigateTo(quranData:QuranData)
-    
+//    func navigateTo(quranData:QuranData)
+    func didselect(quranData:QuranData,index:Int)
 }
 
 protocol  setCellDataProtocol :class {

@@ -9,7 +9,6 @@ import Foundation
 
 class LoginPresenter {
 
-
     private var view :LoginProtocol!
     
     init(view:LoginProtocol) {
@@ -43,6 +42,7 @@ class LoginPresenter {
         
         view.loginSucessfully()
     }
+    
     
     
   

@@ -18,5 +18,9 @@ extension QuranVC:UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelect(index: indexPath.row)
+    }
+    
   
 }

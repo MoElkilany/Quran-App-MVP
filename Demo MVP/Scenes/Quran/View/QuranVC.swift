@@ -15,8 +15,8 @@ protocol SendDataProtocol  {
 class QuranVC: UIViewController {
     
     var presenter :QuranPresenter!
-    
     var delegate  :SendDataProtocol?
+    
     let tableList = UITableView()
     
     override func viewDidLoad() {
@@ -52,21 +52,20 @@ class QuranVC: UIViewController {
 
 
 extension QuranVC : QuranProtocol {
-    
-    func navigateTo(quranData: QuranData) {
+    func didselect(quranData: QuranData, index: Int) {
+//        let vc = QuranInfoVC()
         delegate?.sendData(quranData: quranData)
         self.navigationController?.pushViewController(QuranInfoVC(), animated: true)
     }
     
-    func showProgress() {
 
+    
+    func showProgress() {
         self.showLoading()
-        
     }
     
     func dismissProgress() {
         self.hideLoading()
-        
     }
     
     func getDataSucessfully() {
@@ -76,4 +75,6 @@ extension QuranVC : QuranProtocol {
     func showErrorMessage(error: String) {
         print("Error Message is \(error) ")
     }
+    
+
 }

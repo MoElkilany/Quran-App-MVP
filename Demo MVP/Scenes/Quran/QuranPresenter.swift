@@ -8,7 +8,7 @@
 import Foundation
 
 class QuranPresenter {
-    
+
     private var view:QuranProtocol!
     private var quran = [QuranData]()
     let quranNavigationTitle = "Quran"
@@ -43,7 +43,6 @@ class QuranPresenter {
     }
     
     func didSelect(index:Int){
-        self.view.navigateTo(quranData: quran[index])
+        self.view.didselect(quranData: quran[index], index: index)
     }
-    
 }
